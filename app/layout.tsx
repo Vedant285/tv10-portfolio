@@ -15,7 +15,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "TV10 India - Media Network Agency",
+  title: "TV10 India - Media Network",
   description: "A full-service media network delivering strategy, creativity, and impactful results.",
 };
 
