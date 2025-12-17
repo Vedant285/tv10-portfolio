@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Gallery from './components/Gallery';
 import React, { CSSProperties } from 'react';
+import Magazine from './components/Magazine';
 
 export default function Home() {
   
@@ -49,6 +50,7 @@ export default function Home() {
 
         {/* SERVICES SECTION */}
         <section id="services" className="universe-section">
+          <Magazine />
             <div className="container">
                 <h2 className="section-title animate-on-scroll">Our Core Services</h2>
                 <div className="universe-grid">

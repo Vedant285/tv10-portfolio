@@ -1453,3 +1453,143 @@ footer p {
         gap: 15px;
     }
 }
+
+
+
+/* Magazine Section */
+.magazine-section {
+    background-color: #0a0a0a;
+    border-top: 1px solid #222;
+}
+
+.magazine-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    background: linear-gradient(145deg, #151515, #111);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid #333;
+}
+
+/* Visual Side */
+.magazine-visual {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.magazine-cover-wrapper {
+    position: relative;
+    max-width: 300px;
+    transform: rotate(-3deg);
+    transition: transform 0.3s ease;
+}
+
+.magazine-cover-wrapper:hover {
+    transform: rotate(0deg) scale(1.02);
+}
+
+.magazine-cover {
+    border-radius: 5px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    border: 1px solid #444;
+}
+
+/* Content Side */
+.magazine-content {
+    flex: 1.5;
+}
+
+.magazine-content h3 {
+    font-family: var(--font-secondary);
+    font-size: 2.5rem;
+    color: var(--color-gold);
+    margin-bottom: 20px;
+}
+
+.magazine-desc {
+    color: #ccc;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.magazine-features {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.mag-feature {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--color-light);
+}
+
+.mag-feature i {
+    color: var(--color-gold);
+}
+
+.magazine-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-magazine {
+    background-color: var(--color-gold);
+    color: black;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.btn-magazine:hover {
+    background-color: #e6b000;
+    transform: translateY(-3px);
+}
+
+.btn-outline-mag {
+    border: 2px solid #444;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.btn-outline-mag:hover {
+    border-color: var(--color-gold);
+    color: var(--color-gold);
+}
+
+/* Mobile Responsiveness for Magazine */
+@media (max-width: 768px) {
+    .magazine-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+    
+    .magazine-features {
+        justify-content: center;
+    }
+    
+    .magazine-actions {
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .magazine-cover-wrapper {
+        transform: rotate(0);
+        margin-bottom: 20px;
+    }
+}
